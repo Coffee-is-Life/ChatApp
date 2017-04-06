@@ -2,6 +2,7 @@
 // Java chat room server class
 
 // initial import
+// use bytearrayoutputstream to send files
 import java.util.ArrayList;
 import java.io.*;
 import java.net.*;
@@ -19,7 +20,6 @@ public class Server{
 	private ServerSocket chatroom;
 
 	// constructer for server object to not have static references to each things
-	// only declare certain things as static - not everything
 	private Server(){
 		// initializes arrays and sets up chatroom server socket
 		setup(2120);
